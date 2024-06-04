@@ -1,1 +1,1 @@
-# rpi_sunfounder_monitor_back
+# Monitor Backplate for Raspberry Pi 4B and Sunfounder 10.1" IPS monitor
