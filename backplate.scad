@@ -52,7 +52,7 @@ module video_plate() {
 
 tpl = 157;
 tpw = 100;
-tph = 21;
+tph = 19;
 module touchscreen_plate() {
     union() {
         difference() {
@@ -61,23 +61,23 @@ module touchscreen_plate() {
                 cube([tpl-2, tpw-2, tph], center=true); // inner cube
             translate([tpl/2 - 2, 0 , 0])
                 cube([10, tpw, tph], center=true); // cut off 10 cm lip
-            translate([-(tpl/2) + 95, (tpw/2) - 39, -9])
-                cube([94, 62, 4], center=true);  // Raspberry Pi
             translate([-(tpl/2) + 4, (tpw/2) - 7, -(tph/2)])
                 cylinder(d=3, h=3); // top stand side standoff hole
             translate([-(tpl/2) + 4, (tpw/2) - 87, -(tph/2)])
                 cylinder(d=3, h=3); // bottom stand side standoff hole
-            translate([(-tpl/2) + 53, (-tpw/2) + 5, 0])
-                cube([106, 10, tph], center=true); // slot for portable battery
-            translate([(-tpl/2) + 2, (-tpw/2) + 15, 1])
-                cube([5, 10, tph], center=true); // extra spacing for battery switch
+            translate([-(tpl/2) + 95, (tpw/2) - 37, -9])
+                color("green") cube([97, 66, 4], center=true);  // Raspberry Pi
+            translate([(-tpl/2) + 64, (-tpw/2) + 9, 0])
+                color("red") cube([109, 18, tph], center=true); // slot for portable battery
+            translate([tpl/2 - 36, -tpw/2, 0])
+                color("blue") cube([5, 10, tph], center=true);   // cut out to get to power switch
         }
         difference() {
             translate([tpl/2 - 4, 0 , -8.75])
                 cube([10, tpw, 1.5], center=true); //  lip where cover connects to video side
-            translate([-(tpl/2) + 154 , (tpw/2) - 7, -(tph/2) + 1])
+            translate([-(tpl/2) + 154 , (tpw/2) - 7, -(tph/2)])
                 cylinder(d=3, h=3); // pi side video top standoff hole
-            translate([-(tpl/2) + 154 , (tpw/2) - 87, -(tph/2) + 1])
+            translate([-(tpl/2) + 154 , (tpw/2) - 87, -(tph/2)])
                 cylinder(d=3, h=3); // pi side video standoff hole
         }
     }
