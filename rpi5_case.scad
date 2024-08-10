@@ -3,8 +3,8 @@ $fs = 0.4;
 
 include <YAPP_Box/YAPPgenerator_v3.scad>;
 
-printBaseShell = false;
-printLidShell = true;
+printBaseShell = true;
+printLidShell = false;
 
 pcbLength = 87.90;
 pcbWidth = 56.89;
