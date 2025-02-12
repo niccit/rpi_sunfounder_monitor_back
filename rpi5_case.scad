@@ -70,10 +70,17 @@ cutoutsFront = [
         [36, 12.2, 0, 0, 1.25, yappCircle]      // Reset button
     ];
 
+// standoffHeight = 5;
+// standoffDiameter = 3;
+// standoffPinDiameter = 0;
+// standoffHoleSlack = 0;
+
+pcbStands =
+[
+    [10, 5, 5, default, 3, 0, 0, 0.5, yappBack, yappBaseOnly]
+];
+
 cutoutsBase = [
-        [80, 3.68, 0, 0, 2.25, yappCircle],        // Left Front
-        [80, 50, 0, 0, 2.25, yappCircle],       // Right Front
-        [24.25, 3.68, 0, 0, 2.25, yappCircle],         // Left Rear
         [pcbLength/2, pcbWidth/2, 50, 2, yappCenter, yappRectangle],        // base vent center
         [pcbLength/2, pcbWidth/2 - 5, 50, 2, yappCenter, yappRectangle],    // base vent
         [pcbLength/2, pcbWidth/2 + 5, 50, 2, yappCenter, yappRectangle],    // base vent
