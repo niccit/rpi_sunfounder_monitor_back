@@ -31,17 +31,17 @@ standoffHoleSlack = 0;
 // standoffs
 pcbStands =
     [   [5, 5, 13, default, standoffDiameter, standoffPinDiameter, standoffHoleSlack, 0.5, yappBackLeft, yappBackRight, yappLidOnly]
-    ,[27, 5, 13, default, standoffDiameter, standoffPinDiameter, standoffHoleSlack, 0.5, yappFrontLeft, yappFrontRight, yappLidOnly]
+    ,[22, 5, 13, default, standoffDiameter, standoffPinDiameter, standoffHoleSlack, 0.5, yappFrontLeft, yappFrontRight, yappLidOnly]
     ];
 
 // Top cutouts for GPIO, Fan, Camera, venting
 cutoutsLid =
     [
-        [28, 20, 0, 0, 10, yappCircle]  // Cooling fan
-        ,[8, 45, 48, 6, 0, yappRectangle]   //GPIO
-        ,[42, 5, 12, 12, 0, yappRectangle] //Camera
-        ,[8, 5, 20, 20, 4, yappRoundedRect, maskCircles]
-        ,[62, 10, 20, 40, 4, yappRoundedRect, maskCircles]
+        [34, 20, 0, 0, 10, yappCircle]  // Cooling fan
+        ,[8, 50, 48, 6, 0, yappRectangle]   //GPIO
+        ,[48, 5, 12, 12, 0, yappRectangle] //Camera
+        ,[8, 5, 20, 40, 4, yappRoundedRect, maskCircles]
+        ,[65, 8, 20, 40, 4, yappRoundedRect, maskCircles]
     ];
 
 // HDMI and Power Ports
