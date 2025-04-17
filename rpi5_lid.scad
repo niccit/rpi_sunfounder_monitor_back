@@ -30,8 +30,8 @@ standoffHoleSlack = 0;
 
 // standoffs
 pcbStands =
-    [   [5, 5, 13, default, standoffDiameter, standoffPinDiameter, standoffHoleSlack, 0.5, yappBackLeft, yappBackRight, yappLidOnly]
-    ,[22, 5, 13, default, standoffDiameter, standoffPinDiameter, standoffHoleSlack, 0.5, yappFrontLeft, yappFrontRight, yappLidOnly]
+    [   [5, 5, 16, default, standoffDiameter, standoffPinDiameter, standoffHoleSlack, 0.5, yappBackLeft, yappBackRight, yappLidOnly]
+    ,[22, 5, 16, default, standoffDiameter, standoffPinDiameter, standoffHoleSlack, 0.5, yappFrontLeft, yappFrontRight, yappLidOnly]
     ];
 
 // Top cutouts for GPIO, Fan, Camera, venting
